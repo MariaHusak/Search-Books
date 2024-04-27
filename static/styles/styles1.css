@@ -1,0 +1,258 @@
+body
+{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*first-second paragraph*/
+
+
+.first_color
+{
+    background-color:  #E6DCD3;
+}
+
+.zero_paragraph
+{
+    text-align: right;
+
+}
+
+.button
+{
+    background-color:#e8c7aa;
+    border: none;
+    color: white;
+    padding: 5px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+    margin-left: 10px ;
+    margin-right:10px  ;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1
+{
+    background-color: #E6DCD3;
+    color: white;
+    border: 2px solid white;
+}
+
+.button1:hover {
+    background-color: #f1ede6;
+    color: white;
+  }
+
+.fist_paragraph
+{
+
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/820b8d27-7da5-43f0-803c-906d843190aa/dg5fm1l-2bf7fa9e-1690-43c2-a24d-3646047a7a82.png/v1/fill/w_816,h_979/bookish_whispers__book_aesthetic__booklovers__flor_by_eaudepassion_dg5fm1l-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgyMGI4ZDI3LTdkYTUtNDNmMC04MDNjLTkwNmQ4NDMxOTBhYVwvZGc1Zm0xbC0yYmY3ZmE5ZS0xNjkwLTQzYzItYTI0ZC0zNjQ2MDQ3YTdhODIucG5nIiwiaGVpZ2h0IjoiPD0xNTM2Iiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvODIwYjhkMjctN2RhNS00M2YwLTgwM2MtOTA2ZDg0MzE5MGFhXC9lYXVkZXBhc3Npb24tNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.cuEWOe0UqKVWCaMFlBa5G1Dyu_PsyZEUvRGof6Qlc-Y');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 45% 85%;
+
+
+}
+
+h1
+{
+    color: white;
+    text-align: center;
+    margin-top: 100px ;
+    margin-bottom: 600px ;
+}
+
+
+.third_paragraph
+{
+    background-color: #F4F1EC;
+}
+
+.fourth_paragraph
+{
+    background-color: #F4F1EC;
+}
+
+.fifth_paragraph
+{
+    background-color: #E6DCD3;
+}
+
+
+h2
+{
+    text-align: center;
+}
+
+.img1
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 150px 150px 0 0;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+}
+
+li {
+  float: left;
+}
+
+li a
+{
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  background-color: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/*flex*/
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: none;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+/*box*/
+
+
+
+div.container {
+  width: 100%;
+}
+
+div.box1 {
+  box-sizing: border-box;
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+div.box2 {
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+
+
+/*third_paragraph*/
+
+.third_paragraph
+{
+  background-color: white;
+}
+
+.head
+{
+  letter-spacing: 2px;
+  position: absolute;
+  top: 1280px;
+  bottom: 0px;
+  left: 0px;
+  right: 1050px;
+}
+
+.text
+{
+  letter-spacing: 2px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  margin-right: 100px;
+  margin-left: 50px;
+}
+
+.img3
+{
+  height: 450px;
+  width: 400px;
+  border-radius: 1000px 1000px 0 0;
+  -moz-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+
+  position: absolute;
+  top: 1265px;
+  bottom: 0px;
+  left: 900px;
+  right: 0px;
+}
+
+/*fourth_paragraph*/
+
+.fourth_paragraph
+{
+  background-color: #E6DCD3;
+
+}
+
+.img4
+{
+  height: 200px;
+  width: 200px;
+  margin-top: 100px;
+}
+
+.colored-shadow-input {
+  width: 250px;
+  padding: 10px;
+  border: 20px solid #E6DCD3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  outline: none;
+  margin-bottom: 50px;
+}
+
+/*fifth_paragraph*/
+
+.fifth_paragraph
+{
+  background-color: white;
+}
+
+.search
+{
+  background-color: #E6DCD3;
+  color: white;
+  text-align: center;
+  border: none;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  height: 200px;
+  width: 300px;
+  border-radius: 1000px 1000px 0 0;
+
+}
+
+.hidden {
+            display: none;
+        }

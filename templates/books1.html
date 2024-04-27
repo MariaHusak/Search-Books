@@ -1,0 +1,134 @@
+<!-- books.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles1.css') }}">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <script src="{{ url_for('static', filename='js/javascript1.js') }}"></script>
+
+
+    <title>Serching books</title>
+</head>
+<body>
+
+    <form id="myForm" action="{{ url_for('process_input') }}" method="post">
+
+    <div class="first_color">
+        <div class="zero_paragraph">
+            <a href="{{ url_for('popular') }}" class="button button1">POPULAR</a>
+            <a href="{{ url_for('saved') }}" class="button button1">SAVED</a>
+            <a href="{{ url_for('favorite') }}" class="button button1">FAVORITE</a>
+        </div>
+        <div class="fist_paragraph">
+            <h1>FIND YOUR BOOK</h1>
+
+            <h2>PARAMETERS</h2>
+        </div>
+
+        <div class="second_paragraph">
+            <ul class="flex-container">
+                <li class="flex-item"><img src="{{ url_for('static', filename='img/picture7.jpg') }}" class="img1" alt="image"></li>
+                <li class="flex-item"><img src="{{ url_for('static', filename='img/picture1.jpg') }}" class="img1" alt="image"></li>
+                <li class="flex-item"><img src="{{ url_for('static', filename='img/picture3.jpg') }}" class="img1" alt="image"></li>
+            </ul>
+
+            <div class="container">
+                <div class="box1">
+                    <label  for="book_name"></label>
+                    <input class="colored-shadow-input" id="book_name"  name="book_name" placeholder="Name of the book..." type="text" required>
+                </div>
+                <div class="box1">
+                    <label for="author_name" ></label>
+                    <input class="colored-shadow-input" id="author_name" name="author_name" placeholder="Name of the author..." type="text" required>
+                </div>
+                <div class="box1">
+                    <label  for="genre"></label>
+                    <input class="colored-shadow-input" id="genre" name="genre" placeholder="Book genre..." type="text"  required>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+        <div class="third_paragraph">
+            <div class="text">
+                <h2 class="head" >About site</h2>
+                <h6>THIS SITE IS CREATED FOR SEARCHING FOR BOOKS, </h6>
+                <h6>ENTER ALL THE REQUIRED PARAMETERS AND PRESS </h6>
+                <h6>SEARCH. YOU CAN CREATE LISTS THAT WILL APPEAR </h6>
+                <h6>IN THE SAVED AND FAVORITE SECTIONS. ALSO, THE </h6>
+                <h6>MOST POPULAR BOOKS OF THE MONTH WILL BE </h6>
+                <h6>SELECTED IN THE POPULAR SECTION.</h6>
+            </div>
+            <img src="{{ url_for('static', filename='img/picture6.jpg') }}" class="img3" alt="image">
+
+        </div>
+
+        <div class="fourth_paragraph">
+
+            <ul class="flex-container">
+                <li class="flex-item"><img src="{{ url_for('static', filename='img/picture10.jpg') }}" class="img4" alt="image"></li>
+                <li class="flex-item"><img src="{{ url_for('static', filename='img/picture14.jpg') }}" class="img4" alt="image"></li>
+                <li class="flex-item"><img src="{{ url_for('static', filename='img/picture9.jpg') }}" class="img4" alt="image"></li>
+                <li class="flex-item"><img src="{{ url_for('static', filename='img/picture2.jpg') }}" class="img4" alt="image"></li>
+            </ul>
+
+            <div class="container">
+                <div class="box2">
+                    <label for="gender_author"></label>
+                    <input class="colored-shadow-input" id="gender_author" name="gender_author" placeholder="Gender of the Author......" type="text"  required>
+
+                </div>
+                <div class="box2">
+                    <label for="year_of_writing"></label>
+                    <input class="colored-shadow-input" id="year_of_writing" name="year_of_writing" placeholder="Year of writing..." type="text" required>
+
+                </div>
+                <div class="box2">
+                    <label for="cover_color"></label>
+                    <input class="colored-shadow-input" id="cover_color" name="cover_color" placeholder="Cover color..." type="text" required>
+                </div>
+                <div class="box2">
+                    <label for="nationality"></label>
+                    <input class="colored-shadow-input" id="nationality" name="nationality" placeholder="Nationality of the book..." type="text" required>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+                <button type="submit" id="submitButton" class="hidden">Submit</button>
+
+        </div>
+
+    </form>
+
+        <div class="fifth_paragraph">
+        <ul class="flex-container">
+            <button class="search" id="switchPageButton" onclick="submitForm()"><h2>SEARCH</h2></button>
+        </ul>
+
+        </div>
+
+
+
+</body>
+</html>

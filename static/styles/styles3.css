@@ -1,0 +1,46 @@
+body
+{
+    font-family: 'Quicksand', sans-serif;
+    background-color:  #E6DCD3;
+}
+
+.img1
+{
+  height: 250px;
+  width: 200px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.colored
+{
+  width: 650px;
+  padding: 200px;
+  border: 20px solid #E6DCD3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  outline: none;
+  margin-bottom: 50px;
+}
+
+button
+{
+ border: none;
+ background-color: #E6DCD3;
+ color: white;
+
+}
+
+
+/*box*/
+
+div.container {
+  width: 100%;
+}
+
+div.box1 {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
