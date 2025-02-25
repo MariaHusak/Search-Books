@@ -19,7 +19,7 @@ def index():
     return render_template('books1.html')
 
 
-
+# noinspection PyInterpreter
 @app.route('/process_input', methods=['POST'])
 def process_input():
     connection = create_connection()
