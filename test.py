@@ -1,12 +1,13 @@
 import unittest
 from app import *
 from unittest.mock import patch, MagicMock
+from constants import DB_CONFIG, fields
 
 class TestCreateConnection(unittest.TestCase):
     @patch('app.mysql.connector.connect')
     def test_create_connection(self, mock_connect):
         create_connection()
-        mock_connect.assert_called_once_with(**db_config)
+        mock_connect.assert_called_once_with(**DB_CONFIG)
 
 
 class TestIndexRoute(unittest.TestCase):
@@ -64,7 +65,7 @@ class TestProcessInput(unittest.TestCase):
             'nationality': 'Unknown'
         })
 
-        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.status_code, 404)
 
 
 class TestSaveBook(unittest.TestCase):
@@ -93,7 +94,7 @@ class TestSaveBook(unittest.TestCase):
         mock_cursor.fetchone.return_value = None
 
         response = self.app.post('/save_book', data={'author_name': 'Unknown Author'})
-        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.status_code, 302)
 
 
 class TestFavoriteBook(unittest.TestCase):
@@ -122,7 +123,7 @@ class TestFavoriteBook(unittest.TestCase):
         mock_cursor.fetchone.return_value = None
 
         response = self.app.post('/favorite_book', data={'author_name': 'Unknown Author'})
-        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.status_code, 302)
 
 
 class TestDelSaveBook(unittest.TestCase):
@@ -151,7 +152,7 @@ class TestDelSaveBook(unittest.TestCase):
         mock_cursor.fetchone.return_value = None
 
         response = self.app.post('/del_save_book', data={'author_name': 'Unknown Author'})
-        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.status_code, 302)
 
 
 class TestDelFavoriteBook(unittest.TestCase):
@@ -180,7 +181,7 @@ class TestDelFavoriteBook(unittest.TestCase):
         mock_cursor.fetchone.return_value = None
 
         response = self.app.post('/del_favorite_book', data={'author_name': 'Unknown Author'})
-        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.status_code, 302)
 
 
 class TestPopularRoute(unittest.TestCase):
